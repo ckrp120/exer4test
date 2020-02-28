@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="userInfo"
+            type="com.example.slambook.UserInfo" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0"
+        android:background="@drawable/notepadbg"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bangers"
+            android:shadowColor="#CD022636"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="5"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textColor="#03A9F4"
+            android:textSize="40sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameHeader"
+                    style="@style/headerStyle"
+                    tools:text="@string/header_name" />
+
+                <EditText
+                    android:id="@+id/nameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint="Enter name"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nicknameHeader"
+                    style="@style/headerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/header_nickname" />
+
+                <EditText
+                    android:id="@+id/nicknameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint="Enter nickname"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/ageHeader"
+                    style="@style/headerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/header_age" />
+
+                <EditText
+                    android:id="@+id/ageEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint="Enter age"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/birthdayHeader"
+                    style="@style/headerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/header_birthday" />
+
+                <EditText
+                    android:id="@+id/birthdayEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint="Enter birthday"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/emailHeader"
+                    style="@style/headerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/header_email" />
+
+                <EditText
+                    android:id="@+id/emailEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint="Enter email"
+                    android:inputType="textEmailAddress" />
+
+                <TextView
+                    android:id="@+id/phoneHeader"
+                    style="@style/headerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/header_phone" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10"
+                    android:layout_marginRight="10"
+                    android:ems="10"
+                    android:hint="Enter phone number"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/courseHeader"
+                    style="@style/headerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/header_course" />
+
+                <EditText
+                    android:id="@+id/courseEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint="Enter your course"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/colorHeader"
+                    style="@style/headerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/header_color" />
+
+                <EditText
+                    android:id="@+id/colorEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint="Enter your favorite color"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/dreamHeader"
+                    style="@style/headerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/header_dream" />
+
+                <EditText
+                    android:id="@+id/dreamEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint="Enter your dream"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/crushHeader"
+                    style="@style/headerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/header_crush" />
+
+                <EditText
+                    android:id="@+id/dreamEdit2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint="Enter name of your crush"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/messageHeader"
+                    style="@style/headerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/header_message" />
+
+                <EditText
+                    android:id="@+id/messageEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Enter your message"
+                    android:inputType="textMultiLine" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#03A9F4"
+            android:fontFamily="@font/bangers"
+            android:text="@string/submitbtn"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</layout>

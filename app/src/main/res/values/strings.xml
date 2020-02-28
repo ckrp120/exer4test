@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SlamBook</string>
+    <string name="title">Slam! Book</string>
+    <string name="submitbtn">Submit</string>
+    <string name="header_name">Name</string>
+    <string name="header_nickname">Nickname</string>
+    <string name="header_age">Age</string>
+    <string name="header_birthday">When is your birthday?</string>
+    <string name="header_phone">Phone Number</string>
+    <string name="header_email">Email</string>
+    <string name="header_course">Course</string>
+    <string name="header_color">Color</string>
+    <string name="header_dream">Dream</string>
+    <string name="header_crush">Crush</string>
+    <string name="header_message">Message</string>
+</resources>
